@@ -1,4 +1,4 @@
-import { ThemeProvider } from '../components/ThemeContext'
+import { ThemeProvider } from '@/components/ThemeContext'
 import './globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
