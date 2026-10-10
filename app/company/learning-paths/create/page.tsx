@@ -195,7 +195,7 @@ export default function CreateLearningPathPage() {
                             placeholder="What needs to be achieved?"
                             className="w-full p-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-violet-500 outline-none"
                             value={task.description || ''}
-                            onChange={(e) => handleInputChange(index, 'description', e.target.value)} // Correction: handleTaskChange
+                            onChange={(e) => handleTaskChange(index, 'description', e.target.value)}
                           />
                         </div>
                       </div>
