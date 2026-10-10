@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { LearningPathSchema, LearningPathTaskSchema, type LearningPathData, type LearningPathTaskData } from '../../../../lib/validation/company'
-import { createClient } from '../../../../lib/supabase/client'
+import { LearningPathSchema, LearningPathTaskSchema, type LearningPathData, type LearningPathTaskData } from '../@/lib/validation/company'
+import { createClient } from '../@/lib/supabase/client'
 
 export default function CreateLearningPathPage() {
   const router = useRouter()

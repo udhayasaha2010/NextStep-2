@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { CompanyOnboardingSchema, type CompanyOnboardingData } from '../../../lib/validation/company'
-import { createClient } from '../../../lib/supabase/client'
+import { CompanyOnboardingSchema, type CompanyOnboardingData } from '@/lib/validation/company'
+import { createClient } from '@/lib/supabase/client'
 
 const STEPS = [
   { id: 'basic', title: 'Company Basics', fields: ['companyName', 'officialEmail', 'website'] },
