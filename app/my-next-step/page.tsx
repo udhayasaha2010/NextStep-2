@@ -43,7 +43,6 @@ export default async function MyNextStepPage() {
           </div>
         ) : (
           <div className="space-y-8">
-            {/* Goal Header */}
             <div className="bg-indigo-900 rounded-3xl p-8 text-white shadow-xl relative overflow-hidden">
               <div className="relative z-10">
                 <p className="text-indigo-300 text-sm font-semibold uppercase tracking-widest mb-2">Current Objective</p>
@@ -57,11 +56,9 @@ export default async function MyNextStepPage() {
                   </div>
                 </div>
               </div>
-              {/* Decorative circle */}
               <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-indigo-800 rounded-full opacity-50" />
             </div>
 
-            {/* Tasks List */}
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-slate-900 ml-2">Roadmap Steps</h3>
               <div className="grid gap-4">
@@ -117,7 +114,7 @@ export default async function MyNextStepPage() {
               </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   )
