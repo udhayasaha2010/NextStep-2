@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { IndividualOnboardingSchema, type IndividualOnboardingData } from '@/lib/validation/onboarding'
-import { createClient } from '@/lib/supabase/client'
+import { IndividualOnboardingSchema, type IndividualOnboardingData } from '../../lib/validation/onboarding'
+import { createClient } from '../../lib/supabase/client'
 
 const STEPS = [
   { id: 'goals', title: 'Your Goals', fields: ['mainGoal', 'interests'] },
