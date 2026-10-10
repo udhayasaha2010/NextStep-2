@@ -1,0 +1,56 @@
+:root {
+  /* Default Theme: Indigo Violet */
+  --primary: 79 70 229;       /* indigo-600 */
+  --primary-foreground: 255 255 255;
+  --primary-muted: 219 234 254; /* indigo-100 */
+  --accent: 139 92 246;       /* violet-500 */
+  --accent-foreground: 255 255 255;
+
+  --background: 248 250 252; /* slate-50 */
+  --foreground: 15 23 42;    /* slate-900 */
+
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+  --card-border: 226 232 240; /* slate-200 */
+
+  --muted: 241 245 249;      /* slate-100 */
+  --muted-foreground: 100 116 139; /* slate-500 */
+
+  --radius: 0.75rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+[data-theme='ocean-blue'] {
+  --primary: 14 165 233;    /* sky-500 */
+  --primary-muted: 224 242 254;
+  --accent: 37 99 235;      /* blue-600 */
+}
+
+[data-theme='emerald-green'] {
+  --primary: 16 185 129;    /* emerald-500 */
+  --primary-muted: 209 250 229;
+  --accent: 5 150 105;      /* emerald-600 */
+}
+
+[data-theme='rose-pink'] {
+  --primary: 244 63 94;     /* rose-500 */
+  --primary-muted: 255 228 235;
+  --accent: 225 29 72;      /* rose-600 */
+}
+
+[data-theme='sunset-orange'] {
+  --primary: 249 115 22;    /* orange-500 */
+  --primary-muted: 255 237 216;
+  --accent: 234 88 12;      /* orange-600 */
+}
+
+.dark {
+  --background: 15 23 42;    /* slate-900 */
+  --foreground: 248 250 252; /* slate-50 */
+  --card: 30 41 59;          /* slate-800 */
+  --card-foreground: 248 250 252;
+  --card-border: 51 65 85;   /* slate-700 */
+  --muted: 30 41 59;
+  --muted-foreground: 148 163 184; /* slate-400 */
+}
