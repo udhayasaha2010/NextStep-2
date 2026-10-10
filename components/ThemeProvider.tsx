@@ -1,3 +1,5 @@
+'use client'
+
 import React, { createContext, useContext, useEffect, useState } from 'react'
 
 type Theme = 'indigo-violet' | 'ocean-blue' | 'emerald-green' | 'rose-pink' | 'sunset-orange'
