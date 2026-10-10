@@ -14,7 +14,7 @@ export async function middleware(request: Request) {
     }
 
     // 2. Initialize Supabase Client
-    const supabase = createClient()
+    const supabase = await createClient()
 
     // Use getUser() instead of getSession() for security in Middleware
     const { data: { user }, error: authError } = await supabase.auth.getUser()

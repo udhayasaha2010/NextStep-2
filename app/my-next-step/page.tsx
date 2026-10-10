@@ -1,8 +1,10 @@
 import { createClient } from '../../lib/supabase/server'
 import { redirect } from 'next/navigation'
 
+export const instant = false
+
 export default async function MyNextStepPage() {
-  const supabase = createClient()
+  const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) redirect('/auth/sign-in')
 
@@ -62,7 +64,7 @@ export default async function MyNextStepPage() {
             <div className="space-y-4">
               <h3 className="text-xl font-bold text-slate-900 ml-2">Roadmap Steps</h3>
               <div className="grid gap-4">
-                {plan.tasks?.sort((a, b) => a.order_index - b.order_index).map((task, index) => (
+                {plan.tasks?.sort((a: { order_index: number }, b: { order_index: number }) => a.order_index - b.order_index).map((task: any, index: number) => (
                   <div
                     key={task.id}
                     className={`group p-6 rounded-3xl border transition-all cursor-pointer ${

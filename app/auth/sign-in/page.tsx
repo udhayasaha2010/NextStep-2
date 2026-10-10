@@ -1,6 +1,8 @@
 import { createClient } from '../../../lib/supabase/server'
 import { redirect } from 'next/navigation'
 
+export const instant = false
+
 export default async function SignInPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 p-4">

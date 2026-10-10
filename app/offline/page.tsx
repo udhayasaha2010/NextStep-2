@@ -1,7 +1,6 @@
-import { createClient } from '../../lib/supabase/server'
-import { redirect } from 'next/navigation'
+'use client'
 
-export default async function OfflinePage() {
+export default function OfflinePage() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-center">
       <div className="max-w-md w-full">
