@@ -1,6 +1,6 @@
 'use client'
 
-import { useTheme } from '../../../components/ThemeProvider'
+import { useTheme } from '../../../components/ThemeContext'
 import { createClient } from '../../../lib/supabase/client'
 import { useState, useEffect } from 'react'
 
