@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@/components/ThemeProvider'
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
