@@ -1,12 +1,14 @@
-import { ThemeProvider } from '@/components/ThemeContext'
+import { ThemeProvider } from '@/components/ThemeProvider'
+import { Analytics } from '@vercel/analytics/react'
 import './globals.css'
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body className="antialiased">
         <ThemeProvider>
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
